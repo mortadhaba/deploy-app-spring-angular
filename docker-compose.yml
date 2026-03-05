@@ -1,11 +1,11 @@
 version: "3.3"
 services:
   angular-app:
-    image: mortadha001/angular-app
+    build: ./angular-app  
     ports:
       - "0.0.0.0:4200:80"      
   spring-boot-app:
-    image: mortadha001/spring-boot-app
+    build: ./springboot/app 
     ports:
       - "0.0.0.0:8081:8081"
     environment:
@@ -26,7 +26,7 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: 'demo'
-      MYSQL_ROOT_USERNAME: 'root'
+      MYSQL_ROOT_USERNAME: 'root'  
       MYSQL_ROOT_PASSWORD: 'root'
     ports:
       - '0.0.0.0:3306:3306'
