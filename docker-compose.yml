@@ -1,11 +1,11 @@
 version: "3.3"
 services:
   angular-app:
-    image: angular-app
+    image: mortadha001/angular-app
     ports:
       - "0.0.0.0:4200:80"      
   spring-boot-app:
-    image: spring-app
+    image: mortadha001/spring-boot-app
     ports:
       - "0.0.0.0:8081:8081"
     environment:
@@ -22,7 +22,7 @@ services:
       - mysql
 
   mysql:
-    image: mysql:5.7
+    image: mortadha001/mysql:5.7
     restart: always
     environment:
       MYSQL_DATABASE: 'demo'
