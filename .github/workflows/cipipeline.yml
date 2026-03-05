@@ -37,5 +37,5 @@ jobs:
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/frontend:latest 
       
       - name: Start application with Docker Compose
-        run: docker-compose up -d
+        run: docker compose up -d
         # just to trigger the pipeline
