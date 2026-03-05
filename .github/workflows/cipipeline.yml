@@ -38,3 +38,4 @@ jobs:
       
       - name: Start application with Docker Compose
         run: docker-compose up -d
+        # just to trigger the pipeline
