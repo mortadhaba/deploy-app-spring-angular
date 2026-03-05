@@ -22,7 +22,7 @@ services:
       - mysql
 
   mysql:
-    image: mortadha001/mysql:5.7
+    image: mysql:5.7
     restart: always
     environment:
       MYSQL_DATABASE: 'demo'
