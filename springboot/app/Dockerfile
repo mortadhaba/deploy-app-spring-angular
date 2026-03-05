@@ -1,5 +1,5 @@
 FROM eclipse-temurin:11
-VOLUME /tmp
+VOLUME /backend
 EXPOSE 8081
 ARG JAR_FILE=target/demo-0.0.1.jar
 ADD ${JAR_FILE} app.jar
