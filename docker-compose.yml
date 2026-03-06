@@ -1,9 +1,9 @@
 version: "3.3"
 services:
   angular-app:
-    build: ./angular-app  
+    build: ./angular-app 
     ports:
-      - "0.0.0.0:4200:80"      
+      - "0.0.0.0:4201:80"      
   spring-boot-app:
     build: ./springboot/app 
     ports:

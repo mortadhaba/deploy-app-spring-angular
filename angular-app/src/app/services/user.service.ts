@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, last } from 'rxjs';
+import { Observable } from 'rxjs';
 import { User } from '../models/User';
 
 @Injectable({
@@ -8,7 +8,9 @@ import { User } from '../models/User';
 })
 export class UserService {
 
-  baseURL:string="http://192.168.187.9:8081/user"
+  // CHANGE CETTE LIGNE - remplace l'IP par localhost
+  baseURL:string="http://localhost:8081/user"  // <-- MODIFIÉ
+  
   constructor(private  httpClient:HttpClient) { }
 
   getAllUsers():Observable<any>{
